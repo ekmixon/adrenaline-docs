@@ -13,7 +13,7 @@ class Footer extends React.Component {
     const docsUrl = this.props.config.docsUrl;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
-    return `${baseUrl}${docsPart}${langPart}${doc}`;
+    return `${baseUrl}${docsPart}${doc}`;
   }
 
   pageUrl(doc, language) {
@@ -37,30 +37,39 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
+            <a href={this.docUrl('guides/getting-started', this.props.language)}>
+              Getting Started
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
+            <a href={this.docUrl('communityInfo/community-info-coc', this.props.language)}>
+              Code of Conduct
             </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference (or other categories)
+            <a href={this.docUrl('communityInfo/community-info-contributing', this.props.language)}>
+              Contributing
             </a>
+            <a href={this.docUrl('communityInfo/community-info-license', this.props.language)}>
+              License
+            </a>
+            {/*<a href={this.docUrl('doc2.html', this.props.language)}>*/}
+            {/*  Guides (or other categories)*/}
+            {/*</a>*/}
+            {/*<a href={this.docUrl('doc3.html', this.props.language)}>*/}
+            {/*  API Reference (or other categories)*/}
+            {/*</a>*/}
           </div>
           <div>
             <h5>Community</h5>
             <a href={this.pageUrl('users.html', this.props.language)}>
-              User Showcase
+              Members
             </a>
+            {/*<a href="https://discordapp.com/">Project Chat</a>*/}
             <a
-              href="https://stackoverflow.com/questions/tagged/"
+              href="https://twitter.com/OpenAdrenaline"
               target="_blank"
               rel="noreferrer noopener">
-              Stack Overflow
+              LinkedIn
             </a>
-            <a href="https://discordapp.com/">Project Chat</a>
             <a
-              href="https://twitter.com/"
+              href=" https://twitter.com/OpenAdrenaline"
               target="_blank"
               rel="noreferrer noopener">
               Twitter
@@ -69,7 +78,11 @@ class Footer extends React.Component {
           <div>
             <h5>More</h5>
             <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
+            <a href="https://github.com/cablelabs/adrenaline-docs">GitHub</a>
+            <a href={`${this.props.config.baseUrl}pdf/Adrenaline_solution_overview.pdf`} target = "_blank"> Adrenaline Flyer</a>
+            <a href="https://github.com/cablelabs/adrenaline-docs">Webinar</a>
+            <a href="https://github.com/cablelabs/adrenaline-docs">Whitepaper</a>
+
             <a
               className="github-button"
               href={this.props.config.repoUrl}

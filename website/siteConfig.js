@@ -11,17 +11,25 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'User1',
+    caption: 'CableLabs',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
+    image: '/img/CableLabs_Logo_Red.png',
+    infoLink: 'https://www.cablelabs.com',
+    pinned: true,
+  },
+  {
+    caption: 'Altran',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/img/altran_logo.png',
+    infoLink: 'https://northamerica.altran.com/',
     pinned: true,
   },
 ];
 
 const siteConfig = {
-  title: 'Adrenaline', // Title for your website.
+  title: ' Adrenaline™ Project', // Title for your website.
   tagline: 'Give your Edge an Adrenaline Boost',
   url: 'https://adrenaline.xyz', // Your website URL
   baseUrl: '/', // Base URL for your project */
@@ -44,12 +52,12 @@ const siteConfig = {
   ],
 
   // If you have users set above, you add it here:
-  // users,
+  users,
 
   /* path to images for header/footer */
   headerIcon: '',
-  footerIcon: 'img/favicon.png',
-  favicon: 'img/favicon.png',
+  footerIcon: 'img/adrenaline-04.svg',
+  favicon: 'img/adrenaline_favicon.png',
 
   /* Colors for website */
   colors: {
@@ -103,7 +111,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-    repoUrl: 'https://github.com/cablelabs/snaps-kubernetes',
+    repoUrl: 'https://github.com/cablelabs/adrenaline-docs',
 };
 
 module.exports = siteConfig;
